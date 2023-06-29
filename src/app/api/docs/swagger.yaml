@@ -1,0 +1,15 @@
+basePath: /api
+info:
+  contact:
+    email: evs10@aluno.ifal.edu.br
+    name: Emanuel Vilela
+  description: Aplicação de gerênciamento de despesas
+  title: Keihi Kanri
+  version: "1.0"
+paths: {}
+securityDefinitions:
+  bearerAuth:
+    in: header
+    name: Authorization
+    type: apiKey
+swagger: "2.0"
