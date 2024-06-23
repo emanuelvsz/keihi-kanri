@@ -1,0 +1,14 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "keihi_db",
+            "database": "keihi",
+            "username": "keihi",
+            "password": "12345678"
+        }
+    ]
+}
