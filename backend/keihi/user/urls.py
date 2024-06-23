@@ -8,8 +8,8 @@ router = routers.DefaultRouter()
 
 urlpatterns = [
     path(
-        "test",
-        TestView.as_view(),
+        "health",
+        HealthView.as_view(),
         name="test",
     ),
 ]
