@@ -1,0 +1,22 @@
+name: "keihi"
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: .docker/backend/Dockerfile
+    env_file: .env
+    environment:
+      - DEBUG=true
+    volumes:
+      - ./keihi:/app
+    ports:
+      - 8000:8000
+  database:
+    build:
+      context: .
+      dockerfile: .docker/database/Dockerfile
+    environment:
+      POSTGRES_USER: keihi
+      POSTGRES_PASSWORD: 12345678
+    ports:
+      - 5432:5432
