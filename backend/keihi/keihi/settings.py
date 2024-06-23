@@ -91,7 +91,7 @@ DATABASES = {
         "NAME": "keihi",   
         "USER": "keihi", 
         "PASSWORD": "12345678",  
-        "HOST": "0.0.0.0",
+        "HOST": "database",
         "PORT": "5432",      
         "CONN_MAX_AGE": int(os.getenv("DATABASE_CONN_MAX_AGE", 0)),
     }

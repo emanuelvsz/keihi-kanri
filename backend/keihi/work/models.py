@@ -8,3 +8,12 @@ class Work(models.Model):
     timestamp = models.DateTimeField(auto_now_add=True)
     description = models.TextField()
     daywork = models.ForeignKey(Daywork, on_delete=models.CASCADE)
+    
+    class Meta:
+        db_table = "work"
+        verbose_name = "Work"
+        verbose_name_plural = "Works"
+
+        indexes = [
+            models.Index(fields=["id"]),
+        ]
