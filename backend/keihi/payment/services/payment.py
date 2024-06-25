@@ -46,3 +46,9 @@ class PaymentServices:
         object.quantity = data.get('quantity')
         object.save()
         return object.id
+    
+    def get_payment_by_month(month_id: int):
+        object = Payment.objects.filter(
+            date__month=month_id
+        )
+        return object

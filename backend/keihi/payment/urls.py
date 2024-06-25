@@ -12,4 +12,9 @@ urlpatterns = [
         PaymentView.as_view(),
         name="payment",
     ),
+    path(
+        "payment/<int:month_id>",
+        PaymentByMonthView.as_view(),
+        name="payment_by_month"
+    )
 ]

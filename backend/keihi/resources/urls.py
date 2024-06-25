@@ -12,4 +12,9 @@ urlpatterns = [
         MonthView.as_view(),
         name="month",
     ),
+    path(
+        "year",
+        YearView.as_view(),
+        name="year",
+    ),
 ]

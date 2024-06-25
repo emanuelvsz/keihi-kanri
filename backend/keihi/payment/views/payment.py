@@ -68,3 +68,14 @@ class PaymentView(APIView):
             serializer.validated_data.get('id', None)
         )
         return Response(status=status.HTTP_204_NO_CONTENT)
+    
+class PaymentByMonthView(APIView):
+    permission_classes = []
+    
+    @swagger_auto_schema(
+        operation_summary="Retorna uma lista de pagamentos de um mês",
+    )
+    def get(self, _, month_id):
+        payments = PaymentServices.get_payment_by_month(month_id)
+        serializer = PaymentSerializer(payments, many=True)
+        return Response(serializer.data)

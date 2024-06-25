@@ -1,0 +1,4 @@
+[
+    {"model": "resources.year", "pk": 1, "fields": {"name": "2023"}},
+    {"model": "resources.year", "pk": 2, "fields": {"name": "2024"}}
+]
