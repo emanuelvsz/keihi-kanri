@@ -1,2 +1,2 @@
 # keihi-kanri
-Keihi Kanri é um gerenciador de gastos.
+Keihi Kanri is an expense manager.
